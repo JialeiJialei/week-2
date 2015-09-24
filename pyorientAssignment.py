@@ -37,28 +37,31 @@ print 'received ' + str(numListings) + ' records'
 # the minimum variable with that price. You can do something similar to find the maximum.
 
 Min = 999999999
-Max = 0
+Max = 0.1
 Sum = 0
 
 for record in records:
 	print record.price
 
-    print record.price
-    
-    if record.price < Min
-        Min = record.price
-    if record.price > Max
-        Max = record.price
     Sum += record.price
+    if record.price < Min:
+        Min = record.price
+    if record.price > Max:
+        Max = record.price
+    
 
-Averageprice = Sum/len(records)
+averageprice = Sum/len(records)
 
 
 # [PRINT OUT THE RESULTING VALUES BY CONCATENATING THEM TO THESE LINES TO CHECK YOUR WORK]
 
+print 'min price: ' 
+print 'max price: ' 
+print 'average price: ' 
+
 print 'min price: ' + str(Min)
 print 'max price: ' + str(Max)
-print 'average price: ' + str(Averageprice)
+print 'average price: ' + str(averageprice)
 
 client.db_close()
 
